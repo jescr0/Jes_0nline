@@ -127,3 +127,19 @@ footer {
     transform: translateY(-2px); /* Subtle lift effect on hover */
 }
 
+.contact-header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-profile-picture {
+    width: 150px; /* Set the size of the square profile picture */
+    height: 150px;
+    object-fit: cover; /* Ensures the image fills the square without distortion */
+    border: 3px solid #8b8c89; /* Optional: Add a border for a polished look */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    display: block;
+    margin: 0 auto;
+}
+
+
