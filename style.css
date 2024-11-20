@@ -76,6 +76,78 @@ footer {
     margin-top: 20px;
 }
 
+
+To add a ProfilePicture.jpg image to your about.html file and display it next to the header (before the "About Me" section), follow these steps:
+
+Updated about.html
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jes_0nline</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <!-- Add Profile Picture -->
+        <div class="profile-header">
+            <img src="images/ProfilePicture.jpg" alt="Jes_Online Profile Picture" class="profile-picture">
+            <h1>About Me</h1>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <p>Hi, I'm Jes_0nline, a passionate streamer who loves to entertain, interact, and build a community. I stream a mix of games, art, and live discussions. Join the fun!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Jes_0nline</p>
+    </footer>
+</body>
+</html>
+Explanation of Changes:
+Image Placement:
+
+The image is placed within a div with the class profile-header inside the <header> tag, right before the content.
+Image Tag:
+
+html
+Copy code
+<img src="images/ProfilePicture.jpg" alt="Jes_Online Profile Picture" class="profile-picture">
+src="images/ProfilePicture.jpg" assumes the file is in the images folder. Adjust the path if needed.
+alt provides a description of the image.
+class="profile-picture" allows for custom styling.
+Styling for Profile Picture: Add the following CSS to your styles.css file to properly style the image and align it with the header text.
+
+CSS for the Profile Picture
+css
+Copy code
+.profile-header {
+    display: flex; /* Align the image and header text side-by-side */
+    align-items: center; /* Vertically align the text with the image */
+    margin: 20px 0; /* Add spacing around the profile section */
+}
+
+.profile-picture {
+    width: 100px; /* Set a fixed width for the image */
+    height: 100px; /* Set a fixed height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Add space between the image and the text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a polished look */
+}
+
 header img {
     width: 100%;
     height: auto; 
