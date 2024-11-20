@@ -106,3 +106,24 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
+/* Button-like Links */
+.button-link {
+    display: inline-block; /* Makes the links behave like buttons */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    background-color: #8b8c89; /* Gray button background */
+    padding: 10px 20px; /* Add padding for button shape */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text for emphasis */
+    text-align: center; /* Center the text inside the button */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a polished look */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+.button-link:hover {
+    background-color: #acd2f2; /* Light blue on hover */
+    color: #333333; /* Dark text for contrast */
+    transform: translateY(-2px); /* Subtle lift effect on hover */
+}
+
