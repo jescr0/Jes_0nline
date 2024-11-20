@@ -236,3 +236,15 @@ input:focus, textarea:focus {
 .submit-button:hover {
     background-color: #acd2f2;
 }
+
+/* Placeholder Styling */
+input::placeholder,
+textarea::placeholder {
+    color: #8b8c89; /* Light gray for placeholder text */
+    font-style: italic; /* Italic text for placeholders */
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: #acd2f2; /* Change color when the input is focused */
+}
