@@ -1,10 +1,10 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let message = document.getElementById("message").value;
+document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevent the form from refreshing the page
 
-    if (name === "" || email === "" || message === "") {
-        alert("All fields are required!");
-        event.preventDefault();  // Prevent form submission if validation fails
-    }
+    // Show confirmation message
+    const confirmationMessage = document.getElementById('confirmation-message');
+    confirmationMessage.style.display = 'block';
+
+    // Optionally, clear the form
+    this.reset();
 });
