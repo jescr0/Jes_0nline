@@ -12,7 +12,7 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutPage.html">About Me</a></li>
-                <li><a href="contactPage.html">Contact Us</a></li>
+                <li><a href="contactPagw.html">Contact Us</a></li>
             </ul>
         </nav>
         <!-- Add square profile photo -->
@@ -23,18 +23,43 @@
 
     <main>
         <section>
-            <h2>Contact Us!</h2>
-            <p>Check me out on my other socials!</p>
+            <h2>Contact Me</h2>
+            <p>Check me out on my other socials! </p>
             <div class="social-buttons">
                 <a href="https://www.twitch.tv/Jes_0nline" target="_blank" class="social-button twitch-button">Twitch</a>
                 <a href="https://www.instagram.com/Jes_0nline/" target="_blank" class="social-button instagram-button">Instagram</a>
                 <a href="https://x.com/Jes_0nline" target="_blank" class="social-button twitter-button">Twitter</a>
             </div>
         </section>
+
+        <!-- Contact Form Section -->
+        <section>
+            <h2>Send Me a Message!</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <p id="confirmation-message" style="display: none; color: green; font-weight: bold;">
+                Thank you for your message! I'll get back to you soon.
+            </p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Jes_0nline</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
