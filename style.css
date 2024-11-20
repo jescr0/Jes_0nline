@@ -1,50 +1,80 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fcfdfe;
-    color: #333333;
+    background-color: #6096ba; /* Background color */
+    color: #fcfdfe; /* Light text color */
 }
 
-header {
-    background-color: #6096ba;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
+/* Navigation Bar */
 nav ul {
     list-style: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #6096ba; /* Background of the navigation bar */
+    background-color: #333333; /* Dark gray navigation bar background */
 }
 
 nav ul li {
-    margin: 0 10px; /* Add spacing between buttons */
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none; /* Remove underline */
-    color: white; /* Text color for contrast */
-    padding: 10px 20px; /* Add padding for button-like appearance */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding for button-like appearance */
     background-color: #8b8c89; /* Gray button background */
     border-radius: 5px; /* Rounded corners */
-    font-weight: bold; /* Make the text stand out */
-    display: inline-block; /* Ensure proper button-like behavior */
+    font-weight: bold; /* Bold text */
+    display: inline-block;
 }
 
 nav ul li a:hover {
-    background-color: #acd2f2; /* Light blue on hover */
-    color: #333333; /* Darker text for better contrast on hover */
+    background-color: #acd2f2; /* Light blue background on hover */
+    color: #333333; /* Dark text for better contrast on hover */
 }
 
+/* Header Section */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+}
+
+/* Profile Header Styling */
+.profile-header {
+    display: flex; /* Align the image and header text side-by-side */
+    align-items: center; /* Vertically align the text with the image */
+    margin: 20px auto; /* Add spacing around the profile section */
+    max-width: 800px; /* Limit the width of the profile header for better layout */
+}
+
+.profile-picture {
+    width: 100px; /* Fixed width for the image */
+    height: 100px; /* Fixed height for the image */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 20px; /* Add space between the image and text */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for a polished look */
+}
+
+/* Main Section */
 main {
     padding: 20px;
     text-align: center;
 }
 
+/* Section Styling */
 section {
     margin: 20px 0;
 }
@@ -59,97 +89,20 @@ section#socials ul li {
 }
 
 section#socials ul li a {
-    color: #6096ba;
+    color: #6096ba; /* Link color */
     text-decoration: none;
     font-weight: bold;
 }
 
 section#socials ul li a:hover {
-    color: #acd2f2;
+    color: #acd2f2; /* Hover link color */
 }
 
+/* Footer */
 footer {
-    background-color: #8b8c89;
-    color: white;
+    background-color: #8b8c89; /* Gray footer background */
+    color: white; /* White text */
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
-}
-
-
-To add a ProfilePicture.jpg image to your about.html file and display it next to the header (before the "About Me" section), follow these steps:
-
-Updated about.html
-html
-Copy code
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Jes_0nline</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-        <!-- Add Profile Picture -->
-        <div class="profile-header">
-            <img src="images/ProfilePicture.jpg" alt="Jes_Online Profile Picture" class="profile-picture">
-            <h1>About Me</h1>
-        </div>
-    </header>
-
-    <main>
-        <section>
-            <p>Hi, I'm Jes_0nline, a passionate streamer who loves to entertain, interact, and build a community. I stream a mix of games, art, and live discussions. Join the fun!</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Jes_0nline</p>
-    </footer>
-</body>
-</html>
-Explanation of Changes:
-Image Placement:
-
-The image is placed within a div with the class profile-header inside the <header> tag, right before the content.
-Image Tag:
-
-html
-Copy code
-<img src="images/ProfilePicture.jpg" alt="Jes_Online Profile Picture" class="profile-picture">
-src="images/ProfilePicture.jpg" assumes the file is in the images folder. Adjust the path if needed.
-alt provides a description of the image.
-class="profile-picture" allows for custom styling.
-Styling for Profile Picture: Add the following CSS to your styles.css file to properly style the image and align it with the header text.
-
-CSS for the Profile Picture
-css
-Copy code
-.profile-header {
-    display: flex; /* Align the image and header text side-by-side */
-    align-items: center; /* Vertically align the text with the image */
-    margin: 20px 0; /* Add spacing around the profile section */
-}
-
-.profile-picture {
-    width: 100px; /* Set a fixed width for the image */
-    height: 100px; /* Set a fixed height for the image */
-    border-radius: 50%; /* Make the image circular */
-    margin-right: 20px; /* Add space between the image and the text */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for a polished look */
-}
-
-header img {
-    width: 100%;
-    height: auto; 
-    display: block;
 }
