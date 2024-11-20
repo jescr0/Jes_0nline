@@ -19,7 +19,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #8b8c89;
+    background-color: #6096ba; 
 }
 
 nav ul li {
@@ -29,10 +29,14 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
+    padding: 10px 20px; /* Add padding for button-like appearance */
+    background-color: #6096ba; /* Same as nav background */
+    border-radius: 5px; /* Round corners */
 }
 
 nav ul li a:hover {
     text-decoration: underline;
+     background-color: #acd2f2; /* Lighter color on hover */
 }
 
 main {
