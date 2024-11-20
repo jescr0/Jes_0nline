@@ -190,39 +190,35 @@ footer {
 
 
 /* Contact Form Styling */
+/* Center the form within the page */
 form {
     max-width: 500px;
-    margin: 20px auto;
+    margin: 0 auto; /* Horizontally centers the form */
     background-color: #fcfdfe;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.form-group {
-    margin-bottom: 15px;
+/* Center the form section */
+section {
+    text-align: center; /* Center-aligns the section heading */
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
+/* Ensure all form elements stretch properly */
 input, textarea {
-    width: 100%;
+    width: 100%; /* Makes the input fields stretch to the full width of the form */
     padding: 10px;
     border: 1px solid #8b8c89;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box; /* Prevents padding from increasing input size */
 }
 
-input:focus, textarea:focus {
-    border-color: #6096ba;
-    outline: none;
-}
-
+/* Adjust button centering */
 .submit-button {
+    display: block; /* Makes the button block-level */
+    width: 100%; /* Full width button for consistency */
     background-color: #6096ba;
     color: white;
     padding: 10px 20px;
@@ -231,11 +227,13 @@ input:focus, textarea:focus {
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 15px; /* Adds spacing above the button */
 }
 
 .submit-button:hover {
     background-color: #acd2f2;
 }
+
 
 /* Placeholder Styling */
 input::placeholder,
