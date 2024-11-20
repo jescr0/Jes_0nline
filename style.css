@@ -143,3 +143,47 @@ footer {
 }
 
 
+/* Social Buttons Container */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Spacing between buttons */
+    margin: 20px 0;
+}
+
+/* General Button Styling */
+.social-button {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding for button shape */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text inside button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+    display: inline-block; /* Ensure proper button behavior */
+}
+
+/* Specific Social Media Button Colors */
+.twitch-button {
+    background-color: #6441a5; /* Twitch purple */
+}
+
+.twitch-button:hover {
+    background-color: #9065c7; /* Lighter Twitch purple on hover */
+}
+
+.instagram-button {
+    background-color: #E1306C; /* Instagram pink */
+}
+
+.instagram-button:hover {
+    background-color: #ff5c92; /* Lighter Instagram pink on hover */
+}
+
+.twitter-button {
+    background-color: #000000; /* Twitter black */
+}
+
+.twitter-button:hover {
+    background-color: #4d4d4d; /* Lighter Twitter gray on hover */
+}
