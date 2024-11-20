@@ -12,31 +12,32 @@ header {
     text-align: center;
     padding: 20px 0;
 }
-
 nav ul {
-    list-style: none;
+    list-style: none; /* Remove bullet points */
     padding: 0;
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #6096ba; 
+    background-color: #333333; /* Background of the navigation bar */
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 10px; /* Add spacing between buttons */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: white;
+    text-decoration: none; /* Remove underline */
+    color: white; /* Text color for contrast */
     padding: 10px 20px; /* Add padding for button-like appearance */
-    background-color: #6096ba; /* Same as nav background */
-    border-radius: 5px; /* Round corners */
+    background-color: #8b8c89; /* Gray button background */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make the text stand out */
+    display: inline-block; /* Ensure proper button-like behavior */
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-     background-color: #acd2f2; /* Lighter color on hover */
+    background-color: #acd2f2; /* Light blue on hover */
+    color: #333333; /* Darker text for better contrast on hover */
 }
 
 main {
